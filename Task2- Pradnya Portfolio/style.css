@@ -1,0 +1,304 @@
+body {
+  background-color: rgb(37, 33, 37);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 110vh;
+}
+/* main id =Title name Pradnya and Nav Bar*/
+#main {
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+  height: 120px;
+  border: 2px solid black;
+  background-color: rgb(37, 33, 37);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+}
+/* Title = Pradnya n its parent id is main */
+#main h1 {
+  margin-left: 120px;
+  padding: 20px 20px;
+  color: white;
+  font-family: "Courgette", cursive;
+  font-size: 50px;
+}
+/* Title for about,skills,projects,internship */
+h3 {
+  color: white;
+  font-family: "Kanit", sans-serif;
+  margin: 20px 180px;
+  letter-spacing: 2px;
+  font-size: 45px;
+  font-weight: 500;
+}
+/* Nav Bar - its parent id is main */
+#task {
+  margin-right: 100px;
+  position: relative;
+  float: right;
+  top: -70px;
+  z-index: 100;
+}
+#task ul {
+  list-style-type: none;
+}
+#task li {
+  display: inline;
+  padding: 20px 20px;
+  color: white;
+}
+#task a {
+  text-decoration: none;
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+}
+/* image and name */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100vh;
+}
+/* id home = image (right side) */
+.home {
+  flex-basis: 50%;
+
+}
+
+.home img {
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid cyan;
+  box-shadow: 2px 2px 5px cyan;
+  margin-top: 100px;
+}
+
+/* id hlo = left side content name ,quote ,2 buttons */
+#hlo {
+  flex-basis: 50%;
+  color: white;
+}
+/* for hello I'm */
+.im {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Kanit", sans-serif;
+  font-size: 70px;
+}
+/* for full name */
+#hlo .pr {
+  color: cyan;
+  letter-spacing: 7px;
+  font-size: 70px;
+  font-family: "Kanit", sans-serif;
+}
+/* buttons = resume n contact */
+#hlo a {
+  border: 2px solid cyan;
+  padding: 5px 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
+  margin: 15px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+header #hlo a:hover,
+a:active {
+  color: black;
+  background-color: cyan;
+}
+/* About me = paragraph */
+.para {
+  color: rgb(217, 216, 216);
+  line-height: 35px;
+  font-size: 25px;
+  margin: 0 180px;
+  margin-bottom: 260px;
+  letter-spacing: 2px;
+}
+p .para ::first-letter {
+  font-size: 200%;
+  color: #8a2be2;
+}
+/* skills = buttons */
+.btn {
+ 
+  margin-left: 180px;
+  margin-top: 40px;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.btn > .lang {
+  background-color: cyan;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border-radius: 5px;
+  
+}
+.btn a {
+  
+ text-decoration: none;
+ color: black;
+ 
+  
+}
+.lang :hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.2);
+}
+/* Projects */
+
+/* parent class */
+.clg-projects {
+  display: flex;
+  margin-left: 100px;
+  padding: 20px;
+}
+/* child class */
+.pro1 {
+  display: 20px;
+
+  margin-right: 40px;
+  border: 2px solid cyan;
+  box-shadow: 2px 2px 5px cyan;
+  padding: 10px 14px;
+  flex: 25%;
+  flex-wrap: wrap;
+}
+.clg-projects img {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.clg-projects p {
+  color: rgb(196, 194, 194);
+  font-family: "Kanit", sans-serif;
+  padding: 14px 18px;
+}
+.clg-projects h4 {
+  color: white;
+  padding-left: 20px;
+  font-size: 22px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+}
+.pro1:hover {
+  transform: scale(1.1);
+}
+
+/* Internship */
+/*   parent  */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  margin: 10px;
+  margin-bottom: 210px;
+  justify-content: center;
+}
+/* child class = piyu n code */
+.piyu {
+  flex: 10;
+  margin: 0 70px;
+  border: 2px solid cyan;
+}
+.code {
+  flex: 10;
+  margin: 0 70px;
+  border: 2px solid cyan;
+}
+.navbar p {
+  color: rgb(217, 216, 216);
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 17px;
+}
+.navbar h4 {
+  color: white;
+  padding-left: 20px;
+  margin-top: 10px;
+  font-size: 22px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+.offer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.offer > a {
+  border: 1px solid cyan;
+  padding: 5px 20px;
+  text-align: center;
+  color: white;
+
+  border-radius: 4px;
+  margin: 15px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.navbar a:hover{
+  background: cyan;
+  color: black;
+}
+footer {
+  height: 50px;
+  border: 2px solid black;
+  background-color: rgb(37, 33, 37);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer img {
+  height: 25px;
+  width: 25px;
+  margin: 10px;
+  justify-content: center;
+  border-radius: 4px;
+}
+@media (max-width: 992px) {
+  header {
+    display: block;
+  }
+  .pro1,
+  .pro1 img {
+    flex: 50%;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pro1 {
+    flex-direction: column;
+  }
+}
